@@ -2,8 +2,8 @@ library(survival)
 library(survminer)
 require("survival")
 library(shiny)
-setwd("d:/yd/survival_3/")
-cancer = read.csv("tumor.csv")
+#setwd("d:/yd/survival_3/")
+cancer = read.csv("./tumor.csv")
 
 
 cancer1 = mutate(cancer, MATH_group=ifelse(cancer$MATH>50, "high","low"))
